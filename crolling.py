@@ -78,6 +78,7 @@ if response.status_code == 200:
     playTime6 = soup.select_one('#__next > div > main > div.sc-7e8eaz-4.aoCmH > div > div > div:nth-child(7) > div > div.d490eh-1.gkciwT > span.buiiz7-0.d490eh-5.hNWwqN')
     
     # 00:00 형식에서 minutes 만 추출
+    
     for i in playTime1:
         time1 = (i.get_text()[:2])
     for i in playTime2:

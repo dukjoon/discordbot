@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+
 # # command_prefix 안에는 원하는 접두사를 넣어주면 된다.
 # # ex) !, / ....
 intents = discord.Intents.all()
@@ -177,14 +178,12 @@ class MyClient(discord.Client):
         trim_text = text.replace(" ", "")
  
         answer_dict = {
-            '안녕': '안녕하세요. 이준헌 입니다.',
+            '안녕': '안녕하세요. 챗봇 입니다.',
             '요일': ':calendar: 오늘은 {}입니다'.format(self.get_day_of_week()),
             '시간': ':clock9: 현재 시간은 {}입니다.'.format(self.get_time()),
-            '세형': '세형이 코딩하니?',
-            '준혁': '베추 ㄱ?',
-            '준헌': '아 기타사고싶다~',
+            '단축': 'https://support.apple.com/ko-kr/HT201236',
+            'chatgpt': 'https://chat.openai.com/',
             '롤': '그대의 {}'.format(self.summoner_time()),
-            '민구': '아 학교가기 싫다 인천 너무너무 좋아~~'
         }
  
         if trim_text == '' or None:

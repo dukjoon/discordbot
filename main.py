@@ -21,11 +21,10 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 #     print('=' * 30)
 #     # 위 코드는 =라는 문자를 30개 출력하라는 뜻이다.
 
-# bot.run('MTA4NjUxOTc3ODY2NTA1NDIxOA.G5CMaE.CVg1nWZ4jdCrYIvnI_lrYy1u675YqvlqAYvEDs')
 
 
-TOKEN = 'MTA4NjUxOTc3ODY2NTA1NDIxOA.G5CMaE.CVg1nWZ4jdCrYIvnI_lrYy1u675YqvlqAYvEDs'
-CHANNEL_ID = '1086501479701041313'
+TOKEN = ''
+CHANNEL_ID = ''
  
  
 class MyClient(discord.Client):
